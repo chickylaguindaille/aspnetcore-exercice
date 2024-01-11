@@ -1,20 +1,29 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using TodoApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Ajouter les services au conteneur.
 builder.Services.AddControllers();
-builder.Services.AddDbContext<TodoContext>(opt =>
-    opt.UseInMemoryDatabase("TodoList"));
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddDbContext<TodoContext>(
+    (serviceProvider, optionsBuilder) =>
+    {
+        var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+        var connectionString = configuration.GetConnectionString("Default");
+        optionsBuilder.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 28)));
+    }
+);
+
+// Ajouter la configuration pour Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurer le pipeline de requêtes HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -22,9 +31,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d+6TyHG+I1DO7mFb/hdiNSwmLE9rZoGCXLuE6h/mBP61RXhZxOvvQXEUq+niHjDwGwiYioyB+RRIKWGFDmQTMw==",
+  "dgSpecHash": "DfGibpgpClrb9JsB1nCgzsK7eqmCpfQo+9OCZu1VPipoBkNDdnqW6hoUX/Bn+D9ZTN5PwJuEz39ix+XqGH53HQ==",
   "success": true,
   "projectFilePath": "/Users/dev/Documents/HETIC/ASPNET/TodoApi/TodoApi.csproj",
   "expectedPackageFiles": [
@@ -117,6 +117,8 @@
     "/Users/dev/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/8.0.0/microsoft.visualstudio.web.codegenerators.mvc.8.0.0.nupkg.sha512",
     "/Users/dev/.nuget/packages/microsoft.win32.systemevents/7.0.0/microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "/Users/dev/.nuget/packages/mono.texttemplating/2.3.1/mono.texttemplating.2.3.1.nupkg.sha512",
+    "/Users/dev/.nuget/packages/mysqlconnector/2.3.3/mysqlconnector.2.3.3.nupkg.sha512",
+    "/Users/dev/.nuget/packages/mysqlconnector.dependencyinjection/2.3.1/mysqlconnector.dependencyinjection.2.3.1.nupkg.sha512",
     "/Users/dev/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/dev/.nuget/packages/nuget.common/6.3.1/nuget.common.6.3.1.nupkg.sha512",
     "/Users/dev/.nuget/packages/nuget.configuration/6.3.1/nuget.configuration.6.3.1.nupkg.sha512",
@@ -127,6 +129,7 @@
     "/Users/dev/.nuget/packages/nuget.projectmodel/6.3.1/nuget.projectmodel.6.3.1.nupkg.sha512",
     "/Users/dev/.nuget/packages/nuget.protocol/6.3.1/nuget.protocol.6.3.1.nupkg.sha512",
     "/Users/dev/.nuget/packages/nuget.versioning/6.3.1/nuget.versioning.6.3.1.nupkg.sha512",
+    "/Users/dev/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "/Users/dev/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/dev/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/dev/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
